@@ -1,0 +1,16 @@
+---
+permalink: /posts.json
+eleventyExcludeFromCollections: true
+---
+[
+{%- for post in collections.posts -%}
+{
+  "title": {{ post.data.title | dump }},
+  "url": {{ post.url | dump }},
+  "date": {{ post.date | readableDate | dump }},
+  "summary": {{ post.data.summary | dump }},
+  "image": {{ (post.data.image if post.data.image else "") | dump }},
+  "category": {{ (post.data.category if post.data.category else "Blog") | dump }}
+}{% if not loop.last %},{% endif %}
+{%- endfor -%}
+]
