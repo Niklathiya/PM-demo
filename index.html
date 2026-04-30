@@ -286,7 +286,19 @@ var miscellaneous_tracking_options = {"ga_mode":"ga4","tracking_mode":"ga","trac
 			<span id="awb-to-top-label" class="screen-reader-text">Go to Top</span>
 		</a>
 	</section>
-		<script type="text/javascript" src="js/common-layout.js"></script></body>
+		<script type="text/javascript" src="js/common-layout.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script></body>
 
 <!-- Mirrored from www.prism-medical.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Feb 2026 14:25:39 GMT -->
 </html>
