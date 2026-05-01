@@ -1217,21 +1217,16 @@ var miscellaneous_tracking_options = {"ga_mode":"ga4","tracking_mode":"ga","trac
       if (!container) return;
       var html = posts.map(function (post) {
         var imgHtml = post.image
-          ? '<p><img class="alignleft size-medium lazyload" src="' + post.image + '" alt="' + post.title + '" width="450" height="450" /></p>'
+          ? '<p><img class="alignleft size-medium" src="' + post.image + '" alt="' + post.title + '" width="450" height="450" /></p>'
           : '';
-        var catBadge = post.category
-          ? '<span style="background:#052c5c;color:#fff;padding:2px 8px;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-family:Mukta Mahee,sans-serif;font-weight:600;margin-right:8px;">' + post.category + '</span>'
-          : '';
-        return '<article class="fusion-post-medium post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized" style="border-top:2px solid #052c5c;padding-top:16px;">'
+        return '<article class="fusion-post-medium post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">'
           + '<div class="fusion-post-content post-content">'
           + '<div class="fusion-post-content-container">'
           + imgHtml
-          + '<h2 style="font-family:Mukta Mahee,sans-serif;font-size:24px;text-transform:uppercase;color:#052c5c;margin-bottom:6px;">'
+          + '<h2 style="font-family:\'Mukta Mahee\',sans-serif;font-size:30px;line-height:30px;text-transform:uppercase;font-weight:400;color:#052c5c;margin-top:0;margin-bottom:10px;">'
           + '<a href="' + post.url + '" style="color:#052c5c;text-decoration:none;">' + post.title + '</a>'
           + '</h2>'
-          + '<p style="font-family:Mukta Mahee,sans-serif;font-size:13px;color:#888;margin-bottom:10px;">' + catBadge + post.date + '</p>'
-          + '<p style="font-family:Mukta Mahee,sans-serif;font-size:15px;color:#50586b;">' + post.summary + '</p>'
-          + '<p><a href="' + post.url + '" style="color:#ea3f3d;font-family:Mukta Mahee,sans-serif;font-size:14px;font-weight:600;">Read More &rarr;</a></p>'
+          + '<div style="font-family:\'Mukta Mahee\',sans-serif;font-size:16px;line-height:1.7;color:#50586b;">' + (post.body || '') + '</div>'
           + '</div></div>'
           + '<div class="fusion-clearfix"></div>'
           + '</article>';
