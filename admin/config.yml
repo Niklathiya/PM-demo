@@ -14,17 +14,6 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
-      - label: Category
-        name: category
-        widget: select
-        options:
-          - Blog
-          - Press Release
-          - Company News
-          - Clinical Education
-          - Compliance
       - { label: Featured Image, name: image, widget: image, required: false }
       - { label: Summary, name: summary, widget: text }
       - { label: Body, name: body, widget: markdown }
-      - { label: SEO Title, name: seo_title, widget: string, required: false }
-      - { label: SEO Description, name: seo_description, widget: text, required: false }

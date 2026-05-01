@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-  <title>{{ seo_title if seo_title else title }} - Prism Dynamic Medical Supply Solutions</title>
-  <meta name="description" content="{{ seo_description if seo_description else summary }}" />
+  <title>{{ title }} - Prism Dynamic Medical Supply Solutions</title>
+  <meta name="description" content="{{ summary }}" />
 
   <meta property="og:locale" content="en_US"/>
   <meta property="og:type" content="article"/>
   <meta property="og:site_name" content="Prism Dynamic Medical Supply Solutions"/>
-  <meta property="og:title" content="{{ seo_title if seo_title else title }}"/>
-  <meta property="og:description" content="{{ seo_description if seo_description else summary }}"/>
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:description" content="{{ summary }}"/>
   <meta property="og:url" content="{{ page.url }}"/>
   {% if image %}<meta property="og:image" content="{{ image }}"/>{% endif %}
 
@@ -95,17 +95,7 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    .prism-post-category {
-      background: #052c5c;
-      color: #fff;
-      padding: 3px 10px;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-family: "Mukta Mahee", sans-serif;
-      font-weight: 600;
-    }
-    .prism-post-breadcrumb {
+.prism-post-breadcrumb {
       padding: 14px 3.84%;
       max-width: 1331.2px;
       margin: 0 auto;
@@ -157,8 +147,7 @@
             <h1>{{ title }}</h1>
 
             <div class="prism-post-meta">
-              {% if category %}<span class="prism-post-category">{{ category }}</span>{% endif %}
-              <span>{{ date | readableDate }}</span>
+<span>{{ date | readableDate }}</span>
             </div>
 
             {% if image %}
