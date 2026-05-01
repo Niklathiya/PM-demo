@@ -5,12 +5,12 @@ eleventyExcludeFromCollections: true
 [
 {%- for post in collections.posts -%}
 {
-  "title": {{ post.data.title | dump }},
-  "url": {{ post.url | dump }},
-  "date": {{ post.date | readableDate | dump }},
-  "summary": {{ post.data.summary | dump }},
-  "image": {{ (post.data.image if post.data.image else "") | dump }},
-  "category": {{ (post.data.category if post.data.category else "Blog") | dump }}
+  "title": {{ post.data.title | dump | safe }},
+  "url": {{ post.url | dump | safe }},
+  "date": {{ post.date | readableDate | dump | safe }},
+  "summary": {{ post.data.summary | dump | safe }},
+  "image": {{ (post.data.image if post.data.image else "") | dump | safe }},
+  "category": {{ (post.data.category if post.data.category else "Blog") | dump | safe }}
 }{% if not loop.last %},{% endif %}
 {%- endfor -%}
 ]
