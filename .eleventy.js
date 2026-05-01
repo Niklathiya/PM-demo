@@ -1,6 +1,3 @@
-const markdownIt = require("markdown-it");
-const md = markdownIt({ html: true });
-
 module.exports = function (eleventyConfig) {
   // Pass through all static assets unchanged
   eleventyConfig.addPassthroughCopy("css");
@@ -19,8 +16,6 @@ module.exports = function (eleventyConfig) {
 
   // Pass through all existing root-level HTML files unchanged
   eleventyConfig.addPassthroughCopy("*.html");
-
-  eleventyConfig.addFilter("markdownify", (content) => md.render(content || ""));
 
   // Readable date filter for templates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
