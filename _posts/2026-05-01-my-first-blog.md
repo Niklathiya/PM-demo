@@ -1,8 +1,7 @@
 ---
-title: My First Post
-date: 2026-05-01T12:03:00.000+05:30
-category: Blog
-summary: tsest
+title: My First Blog
+date: 2026-05-01T12:31:00.000+05:30
+summary: test
 ---
 
 
@@ -31,3 +30,4 @@ This is a **sample blog post** to confirm that everything is working correctly w
 ### 🔹 Sample Quote
 
 > This is a test quote to check styling and formatting.
+
