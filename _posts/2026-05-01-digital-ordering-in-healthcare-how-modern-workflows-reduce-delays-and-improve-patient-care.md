@@ -3,7 +3,7 @@ title: '": Digital Ordering in Healthcare: How Modern Workflows Reduce Delays
   and   Improve Patient Care"'
 date: 2026-05-01T13:02:00.000+05:30
 ---
-!\[Healthcare employee smiling in front of computer](images/uploads/2026/01/Blog-Digital-Ordering-in-Healthcare-How-Modern-Workflows-Reduce-Delays-and-Improve-Patient-Care--450x450.jpg)
+![Healthcare employee smiling in front of computer](images/uploads/2026/01/Blog-Digital-Ordering-in-Healthcare-How-Modern-Workflows-Reduce-Delays-and-Improve-Patient-Care--450x450.jpg)
 
 \# Digital Ordering in Healthcare: How Modern Workflows Reduce Delays and Improve Patient Care
 
